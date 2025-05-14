@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Labyu Keo</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        .gym-bg {
+            background: linear-gradient(to right, #1a1a2e, #16213e);
+        }
+        .dumbbell-spin {
+            animation: spin 4s linear infinite;
+        }
+        @keyframes spin {
+            0% { transform: rotate(0deg); }
+            100% { transform: rotate(360deg); }
+        }
+        .pulse {
+            animation: pulse 2s infinite;
+        }
+        @keyframes pulse {
+            0% { transform: scale(1); }
+            50% { transform: scale(1.05); }
+            100% { transform: scale(1); }
+        }
+        .fade-in {
+            animation: fadeIn 1.5s;
+        }
+        @keyframes fadeIn {
+            from { opacity: 0; }
+            to { opacity: 1; }
+        }
+        .weight-plate {
+            width: 100px;
+            height: 100px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: white;
+            font-weight: bold;
+            position: relative;
+            margin: 0 auto;
+        }
+        .plate-20 { background: #e63946; border: 8px solid #f1faee; }
+        .plate-15 { background: #457b9d; border: 8px solid #f1faee; }
+        .plate-10 { background: #a8dadc; border: 8px solid #1d3557; color: #1d3557; }
+        .plate-5 { background: #f1faee; border: 8px solid #1d3557; color: #1d3557; }
+    </style>
+</head>
+<body class="gym-bg min-h-screen font-sans text-white">
+    <div class="container mx-auto px-4 py-12">
+        <!-- Hero Section -->
+        <section class="text-center mb-16 fade-in">
+            <div class="max-w-3xl mx-auto">
+                <div class="dumbbell-spin inline-block mb-6">
+                    <i class="fas fa-dumbbell text-red-500 text-6xl"></i>
+                </div>
+                <h1 class="text-4xl md:text-5xl font-bold text-white mb-4">FAILURE IS JUST YOUR WARM-UP SET</h1>
+                <p class="text-xl text-gray-300 mb-8">In the gym of life, setbacks are the weights that make you stronger.</p>
+                <div class="bg-gray-800 rounded-lg shadow-lg p-6 max-w-md mx-auto border-l-4 border-red-500">
+                    <p class="text-white italic">"Pain unlocks a secret doorway in the mind, one that leads to both peak performance and beautiful silence."</p>
+                    <p class="text-gray-400 mt-2">- David Goggins</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Gym Motivation Cards -->
+        <section class="mb-16">
+            <h2 class="text-3xl font-bold text-center text-white mb-8">TRAIN YOUR MIND LIKE YOU TRAIN YOUR BODY</h2>
+            <div class="grid md:grid-cols-3 gap-6">
+                <div class="bg-gray-800 p-6 rounded-lg shadow-md hover:shadow-lg transition-all border-t-4 border-red-500">
+                    <div class="weight-plate plate-20 mb-4">
+                        20KG
+                    </div>
+                    <h3 class="text-xl font-semibold mb-3 text-white text-center">PROGRESS REQUIRES RESISTANCE</h3>
+                    <p class="text-gray-300 text-center">Just like muscles need resistance to grow, your character needs challenges to strengthen.</p>
+                </div>
+                <div class="bg-gray-800 p-6 rounded-lg shadow-md hover:shadow-lg transition-all border-t-4 border-blue-500">
+                    <div class="weight-plate plate-15 mb-4">
+                        15KG
+                    </div>
+                    <h3 class="text-xl font-semibold mb-3 text-white text-center">FAILURE IS YOUR PR</h3>
+                    <p class="text-gray-300 text-center">This is your Personal Record for adversity. Next time you'll lift heavier dreams.</p>
+                </div>
+                <div class="bg-gray-800 p-6 rounded-lg shadow-md hover:shadow-lg transition-all border-t-4 border-green-500">
+                    <div class="weight-plate plate-10 mb-4">
+                        10KG
+                    </div>
+                    <h3 class="text-xl font-semibold mb-3 text-white text-center">REST AND RECOVER</h3>
+                    <p class="text-gray-300 text-center">Even champions need recovery time. It's okay to rest before your next big lift.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Success Stories -->
+        <section class="mb-16 bg-gray-800 rounded-xl shadow-lg overflow-hidden">
+            <div class="md:flex">
+                <div class="md:w-1/2 p-8 md:p-12">
+                    <h2 class="text-3xl font-bold text-white mb-6">MGA PUKING INANG COMEBACK STORIES</h2>
+                    <p class="text-gray-300 mb-6">For example etong mga gagong to:</p>
+                    <ul class="space-y-4">
+                        <li class="flex items-start">
+                            <span class="bg-red-500 text-white rounded-full p-2 mr-3">
+                                <i class="fas fa-trophy"></i>
+                            </span>
+                            <span class="text-gray-300">Si Michael Jordan na cut sa putang inang highschool team niya.</span>
+                        </li>
+                        <li class="flex items-start">
+                            <span class="bg-red-500 text-white rounded-full p-2 mr-3">
+                                <i class="fas fa-trophy"></i>
+                            </span>
+                            <span class="text-gray-300">Si Arnold Schwarzenegger talo sa mga una niyang competitions.</span>
+                        </li>
+                        <li class="flex items-start">
+                            <span class="bg-red-500 text-white rounded-full p-2 mr-3">
+                                <i class="fas fa-trophy"></i>
+                            </span>
+                            <span class="text-gray-300">SYEMPRE MY GOAT LEBRON JAMES NA COMEBACK UNG 3-1 LEAD SA WARRIORS</span>
+                        </li>
+                    </ul>
+                </div>
+                <div class="md:w-1/2 bg-gray-700 flex items-center justify-center p-8">
+                    <div class="text-center">
+                        <div class="weight-plate plate-5 mb-6 pulse">
+                            YOU
+                        </div>
+                        <h3 class="text-2xl font-bold text-white mb-4">YOUR STORY IS JUST BEGINNING</h3>
+                        <p class="text-gray-300">ISIPIN MO PRE YUNG MGA ENTRANCE EXAM DI PA NAMAN YUN YUNG MGA FINAL SETS MO DIBA?</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Next Steps -->
+        <section class="mb-16">
+            <h2 class="text-3xl font-bold text-center text-white mb-8">YOUR TRAINING PLAN</h2>
+            <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
+                <div class="bg-gray-800 p-6 rounded-lg shadow-md hover:shadow-lg transition-all hover:border-red-500 border border-gray-700">
+                    <div class="bg-red-500 w-12 h-12 rounded-full flex items-center justify-center mb-4 mx-auto">
+                        <i class="fas fa-redo text-white text-xl"></i>
+                    </div>
+                    <h3 class="text-xl font-semibold text-center mb-3 text-white">RETRY</h3>
+                    <p class="text-gray-300 text-center">Like perfecting your form, sometimes you need another attempt to hit your PR.</p>
+                </div>
+                <div class="bg-gray-800 p-6 rounded-lg shadow-md hover:shadow-lg transition-all hover:border-blue-500 border border-gray-700">
+                    <div class="bg-blue-500 w-12 h-12 rounded-full flex items-center justify-center mb-4 mx-auto">
+                        <i class="fas fa-route text-white text-xl"></i>
+                    </div>
+                    <h3 class="text-xl font-semibold text-center mb-3 text-white">ALTERNATIVE ROUTES</h3>
+                    <p class="text-gray-300 text-center">There are many exercises to build strength - find the path that works for you.</p>
+                </div>
+                <div class="bg-gray-800 p-6 rounded-lg shadow-md hover:shadow-lg transition-all hover:border-yellow-500 border border-gray-700">
+                    <div class="bg-yellow-500 w-12 h-12 rounded-full flex items-center justify-center mb-4 mx-auto">
+                        <i class="fas fa-dumbbell text-white text-xl"></i>
+                    </div>
+                    <h3 class="text-xl font-semibold text-center mb-3 text-white">BUILD FOUNDATION</h3>
+                    <p class="text-gray-300 text-center">Master the basics first - they'll support your biggest lifts later.</p>
+                </div>
+                <div class="bg-gray-800 p-6 rounded-lg shadow-md hover:shadow-lg transition-all hover:border-green-500 border border-gray-700">
+                    <div class="bg-green-500 w-12 h-12 rounded-full flex items-center justify-center mb-4 mx-auto">
+                        <i class="fas fa-heartbeat text-white text-xl"></i>
+                    </div>
+                    <h3 class="text-xl font-semibold text-center mb-3 text-white">MENTAL STRENGTH</h3>
+                    <p class="text-gray-300 text-center">The mind gives up before the body. Train both.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Spotter Messages -->
+        <section class="max-w-2xl mx-auto bg-gray-800 rounded-xl shadow-lg p-8 mb-16 text-center border border-gray-700">
+            <h2 class="text-3xl font-bold text-white mb-6">SPOT KA NAMIN PRE?</h2>
+            <p class="text-gray-300 mb-6">Pindutin mo tong putang inang to:</p>
+            <button id="spotterBtn" class="bg-red-600 hover:bg-red-700 text-white font-bold py-3 px-6 rounded-full transition-all transform hover:scale-105 mb-6">
+                <i class="fas fa-dumbbell mr-2"></i> LIFT ME UP
+            </button>
+            <div id="spotterMessage" class="bg-gray-700 border-l-4 border-red-500 p-4 text-left rounded hidden">
+                <p class="text-white" id="messageText"></p>
+            </div>
+        </section>
+
+        <!-- Final Message -->
+        <section class="text-center py-12 bg-gray-800 rounded-xl shadow-inner max-w-4xl mx-auto border border-gray-700">
+            <h2 class="text-4xl font-bold text-white mb-6">ONE MORE REP!</h2>
+            <p class="text-xl text-gray-300 mb-8 max-w-2xl mx-auto">The difference between successful people and others is not lack of failure, but lack of persistence.</p>
+            <div class="inline-flex items-center bg-red-500 text-white px-6 py-3 rounded-full">
+                <i class="fas fa-fire mr-3 text-2xl"></i>
+                <span class="font-semibold">Kaya mo yan Keo! I love you mwamwa</span>
+            </div>
+        </section>
+    </div>
+
+    <script>
+        // Spotter message generator
+        const gymMessages = [
+            "Warm up set mo palang yan pre wag ka mag alala",
+            "Okay lang malungkot minsan pre andito kami para sayo",
+            "Wag mo hayaang kainin ka ng lungkotk pre i-gym natin yan",
+            "Tiwala lang pre may mas magandang opportunity rin na darating",
+            "The mind gives up before the body does. Don't let your mind quit on you.",
+            "You wouldn't expect to bench 300lbs on your first try. Life goals take practice too!",
+            "Recovery is part of training. Take time to reflect and come back stronger.",
+            "Every rep counts, even the failed ones. They all add to your strength."
+        ];
+
+        document.getElementById('spotterBtn').addEventListener('click', function() {
+            const randomMessage = gymMessages[Math.floor(Math.random() * gymMessages.length)];
+            const messageElement = document.getElementById('messageText');
+            const container = document.getElementById('spotterMessage');
+            
+            messageElement.textContent = randomMessage;
+            container.classList.remove('hidden');
+            container.classList.add('animate__animated', 'animate__fadeIn');
+            
+            // Scroll to the message
+            container.scrollIntoView({ behavior: 'smooth' });
+        });
+
+        // Add some animation when scrolling
+        document.addEventListener('DOMContentLoaded', function() {
+            const observerOptions = {
+                threshold: 0.1
+            };
+
+            const observer = new IntersectionObserver(function(entries) {
+                entries.forEach(entry => {
+                    if (entry.isIntersecting) {
+                        entry.target.classList.add('animate__animated', 'animate__fadeInUp');
+                        observer.unobserve(entry.target);
+                    }
+                });
+            }, observerOptions);
+
+            document.querySelectorAll('section, .weight-plate').forEach(section => {
+                observer.observe(section);
+            });
+        });
+    </script>
+</body>
+</html>
